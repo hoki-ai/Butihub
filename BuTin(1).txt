@@ -1,0 +1,49 @@
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
+
+local Window = redzlib:MakeWindow({
+  Title = "Buti Hub : Blox Fruits",
+  SubTitle = "by Buti",
+  SaveFolder = "Redz | redz lib v5.lua"
+})
+
+Window:AddMinimizeButton({
+    Button = { Image = "rbxassetid://74518765898741", BackgroundTransparency = 0 },
+    Corner = { CornerRadius = UDim.new(0, 5) },
+})
+
+local Tab = Window:MakeTab({"Discord", "info"})
+
+Tab:AddDiscordInvite({
+    Name = "redz Hub | Community",
+    Description = "Join our discord community to receive information about the next update",
+    Logo = "rbxassetid://95105936784502",
+    Invite = "http://discord.gg/7aR7kNVt4g",
+})
+
+local Tab2 = Window:MakeTab({"Blox fruit", "apple"})
+
+local Section = Tab2:AddSection({"Blox fruit"})
+
+Tab2:AddButton({
+    Name = "Redz hub",
+    Description = "",
+    Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))(Settings)
+    end
+})
+
+Tab2:AddButton({
+    Name = "Xero hub",
+    Description = "",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+    end
+})
+
+Tab2:AddButton({
+    Name = "Astral hub",
+    Description = "",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html"))(
+    end
+})

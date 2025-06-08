@@ -185,6 +185,6 @@ Tab2:AddButton({
 
 
 
-local Tab2 = Window:MakeTab({"ffff", "sword"})
-local Tab2 = Window:MakeTab({"B", "anchor"})
-local Tab2 = Window:MakeTab({"Bt", "home"})
+local Tab3 = Window:MakeTab({"ffff", "sword"})
+local Tab4 = Window:MakeTab({"B", "anchor"})
+local Tab5 = Window:MakeTab({"Bt", "home"})

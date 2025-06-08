@@ -1,0 +1,128 @@
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
+
+local Window = redzlib:MakeWindow({
+  Title = "BoyTin Roblox",
+  SubTitle = "by BoyTin",
+  SaveFolder = "Blox fruit"
+})
+
+Window:AddMinimizeButton({
+    Button = { Image = "rbxassetid://74518765898741", BackgroundTransparency = 0 },
+    Corner = { CornerRadius = UDim.new(0, 5) },
+})
+
+local Tab = Window:MakeTab({"Discord", "info"})
+
+Tab:AddDiscordInvite({
+    Name = "redz Hub | Community",
+    Description = "Thăm gia discord của redz",
+    Logo = "rbxassetid://95105936784502",
+    Invite = "http://discord.gg/7aR7kNVt4g",
+})
+
+local Tab2 = Window:MakeTab({"Blox fruit", "apple"})
+
+local Section = Tab2:AddSection({"Blox fruit"})
+
+Tab2:AddButton({
+    Name = "Redz",
+    Description = "",
+    Default = false,
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))(Settings)
+    end
+})
+
+Tab2:AddButton({
+    Name = "Tsuo hub",
+    Description = "",
+    Default = false,
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
+    end
+})
+
+Tab2:AddButton({
+    Name = "Astral hub",
+    Description = "",
+    Default = false,
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html"))()
+    end
+})
+
+Tab2:AddButton({
+    Name = "Xero hub",
+    Description = "",
+    Default = false,
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+    end
+})
+
+Tab2:AddButton({
+    Name = "Volcano V3",
+    Description = "",
+    Default = false,
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/indexeduu/BF-NewVer/refs/heads/main/V3New.lua"))()
+    end
+})
+
+Tab2:AddButton({
+    Name = "Monster hub",
+    Description = "",
+    Default = false,
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/giahuy2511-coder/MonsterHub/refs/heads/main/MonsterHub"))() 
+    end
+})
+
+Tab2:AddButton({
+    Name = "W azure",
+    Description = "",
+    Default = false,
+    Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+    end
+})
+
+Tab2:AddButton({
+    Name = "Rubu V3",
+    Description = "",
+    Default = false,
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bubu2k/Rubutv/refs/heads/main/RubuHubV3.txt"))()
+    end
+})
+
+Tab2:AddButton({
+    Name = "Rubu V4",
+    Description = "",
+    Default = false,
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bubu2k/Rubutv/refs/heads/main/RuBuV4.lua"))()
+    end
+})
+
+
+
+
+
+
+
+
+
+local Tab4 = Window:MakeTab({"Trái/Đột Kích", "cherry"})
+
+local Tab5 = Window:MakeTab({"Stats", "signal"})
+
+local Tab6 = Window:MakeTab({"Dịch Chuyển", "locate"})
+
+local Tab7 = Window:MakeTab({"Giao Diện", "user"})
+
+local Tab8 = Window:MakeTab({"Cửa Hàng", "shoppingCart"})
+
+local Tab9 = Window:MakeTab({"Khác", "settings"})
+
+
